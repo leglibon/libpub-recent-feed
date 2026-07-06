@@ -1,0 +1,32 @@
+[
+  {
+    "group_id": 9221,
+    "name": "Tariffs: A Snapshot",
+    "friendly_url": "https://librarypublications.ola.org/pab/tariffs-and-trade",
+    "published": "2026-06-19 19:36:46"
+  },
+  {
+    "group_id": 9221,
+    "name": "Public Transit",
+    "friendly_url": "https://librarypublications.ola.org/pab/public-transit",
+    "published": "2026-06-09 12:38:56"
+  },
+  {
+    "group_id": 13904,
+    "name": "Education: Two-page briefings",
+    "friendly_url": "https://librarypublications.ola.org/research-papers/education",
+    "published": "2026-06-01 14:25:44"
+  },
+  {
+    "group_id": 9221,
+    "name": "Child Protection",
+    "friendly_url": "https://librarypublications.ola.org/pab/child-protection",
+    "published": "2026-04-27 19:31:51"
+  },
+  {
+    "group_id": 13904,
+    "name": "Climate change and human health",
+    "friendly_url": "https://librarypublications.ola.org/research-papers/climate-change-and-human-health",
+    "published": "2026-04-21 13:06:14"
+  }
+]
