@@ -1,0 +1,37 @@
+# feed.yml — APPROACH A (nightly static JSON)
+# Put this file at:  .github/workflows/feed.yml
+# It runs build-feed.mjs once a day (and on demand), then commits recent.json
+# if it changed. The key is read from the LIBGUIDES_KEY repository secret.
+
+name: Build recent-published feed
+
+on:
+  schedule:
+    - cron: "0 7 * * *"   # 07:00 UTC daily (~2–3 a.m. Eastern). Adjust as you like.
+  workflow_dispatch: {}    # adds a manual "Run workflow" button
+
+permissions:
+  contents: write          # allows the job to commit recent.json back to the repo
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build recent.json
+        run: node build-feed.mjs
+        env:
+          LIBGUIDES_KEY: ${{ secrets.LIBGUIDES_KEY }}
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "feed-bot"
+          git config user.email "feed-bot@users.noreply.github.com"
+          git add recent.json
+          git diff --staged --quiet || git commit -m "Update recent.json"
+          git push
