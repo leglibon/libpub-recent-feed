@@ -1,5 +1,11 @@
 [
   {
+    "group_id": 14648,
+    "name": "Reports prepared by Standing Committees",
+    "friendly_url": "https://librarypublications.ola.org/standing-committee-reports",
+    "published": "2026-08-05 18:41:01"
+  },
+  {
     "group_id": 9221,
     "name": "Tariffs: A Snapshot",
     "friendly_url": "https://librarypublications.ola.org/pab/tariffs-and-trade",
@@ -22,11 +28,5 @@
     "name": "Child Protection",
     "friendly_url": "https://librarypublications.ola.org/pab/child-protection",
     "published": "2026-04-27 19:31:51"
-  },
-  {
-    "group_id": 13904,
-    "name": "Climate change and human health",
-    "friendly_url": "https://librarypublications.ola.org/research-papers/climate-change-and-human-health",
-    "published": "2026-04-21 13:06:14"
   }
 ]
