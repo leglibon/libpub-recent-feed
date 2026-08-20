@@ -30,7 +30,7 @@ jobs:
 
       - name: Validate thumbnails.json
         run: |
-          node -e "
+          node --input-type=commonjs -e "
             const fs = require('fs');
             if (fs.existsSync('thumbnails.json')) {
               JSON.parse(fs.readFileSync('thumbnails.json', 'utf8'));
@@ -42,19 +42,21 @@ jobs:
 
       - name: Check thumbnail URLs are reachable
         run: |
-          node -e "
-            const fs = require('fs');
-            if (!fs.existsSync('thumbnails.json')) process.exit(0);
-            const thumbs = JSON.parse(fs.readFileSync('thumbnails.json', 'utf8'));
-            const checks = Object.entries(thumbs).map(async ([key, url]) => {
-              try {
-                const res = await fetch(url, { method: 'HEAD' });
-                if (!res.ok) console.log('::warning::Thumbnail for ' + key + ' returned ' + res.status + ' — ' + url);
-              } catch (e) {
-                console.log('::warning::Thumbnail for ' + key + ' failed to load — ' + url);
-              }
-            });
-            await Promise.all(checks);
+          node --input-type=commonjs -e "
+            (async () => {
+              const fs = require('fs');
+              if (!fs.existsSync('thumbnails.json')) process.exit(0);
+              const thumbs = JSON.parse(fs.readFileSync('thumbnails.json', 'utf8'));
+              const checks = Object.entries(thumbs).map(async ([key, url]) => {
+                try {
+                  const res = await fetch(url, { method: 'HEAD' });
+                  if (!res.ok) console.log('::warning::Thumbnail for ' + key + ' returned ' + res.status + ' — ' + url);
+                } catch (e) {
+                  console.log('::warning::Thumbnail for ' + key + ' failed to load — ' + url);
+                }
+              });
+              await Promise.all(checks);
+            })();
           "
 
       - name: Build recent.json
