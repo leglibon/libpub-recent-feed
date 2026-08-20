@@ -1,17 +1,22 @@
 # feed.yml — APPROACH A (nightly static JSON)
-# Put this file at:  .github/workflows/feed.yml
-# It runs build-feed.mjs once a day (and on demand), then commits recent.json
-# if it changed. The key is read from the LIBGUIDES_KEY repository secret.
+# Put this file at: .github/workflows/feed.yml
+# It runs build-feed.mjs once a day (and on demand, and whenever
+# thumbnails.json changes), then commits recent.json if it changed and
+# purges the jsDelivr cache so the update shows up promptly. The key is
+# read from the LIBGUIDES_KEY repository secret.
 
 name: Build recent-published feed
 
 on:
   schedule:
     - cron: "0 7 * * *"   # 07:00 UTC daily (~2–3 a.m. Eastern). Adjust as you like.
-  workflow_dispatch: {}    # adds a manual "Run workflow" button
+  push:
+    paths:
+      - "thumbnails.json"  # rebuild as soon as a thumbnail is added/changed
+  workflow_dispatch: {}     # adds a manual "Run workflow" button
 
 permissions:
-  contents: write          # allows the job to commit recent.json back to the repo
+  contents: write   # allows the job to commit recent.json back to the repo
 
 jobs:
   build:
@@ -23,6 +28,35 @@ jobs:
         with:
           node-version: 20
 
+      - name: Validate thumbnails.json
+        run: |
+          node -e "
+            const fs = require('fs');
+            if (fs.existsSync('thumbnails.json')) {
+              JSON.parse(fs.readFileSync('thumbnails.json', 'utf8'));
+              console.log('thumbnails.json is valid JSON');
+            } else {
+              console.log('thumbnails.json not present — skipping thumbnails this run');
+            }
+          "
+
+      - name: Check thumbnail URLs are reachable
+        run: |
+          node -e "
+            const fs = require('fs');
+            if (!fs.existsSync('thumbnails.json')) process.exit(0);
+            const thumbs = JSON.parse(fs.readFileSync('thumbnails.json', 'utf8'));
+            const checks = Object.entries(thumbs).map(async ([key, url]) => {
+              try {
+                const res = await fetch(url, { method: 'HEAD' });
+                if (!res.ok) console.log('::warning::Thumbnail for ' + key + ' returned ' + res.status + ' — ' + url);
+              } catch (e) {
+                console.log('::warning::Thumbnail for ' + key + ' failed to load — ' + url);
+              }
+            });
+            await Promise.all(checks);
+          "
+
       - name: Build recent.json
         run: node build-feed.mjs
         env:
@@ -30,8 +64,11 @@ jobs:
 
       - name: Commit if changed
         run: |
-          git config user.name  "feed-bot"
+          git config user.name "feed-bot"
           git config user.email "feed-bot@users.noreply.github.com"
           git add recent.json
           git diff --staged --quiet || git commit -m "Update recent.json"
           git push
+
+      - name: Purge jsDelivr cache
+        run: curl -s "https://purge.jsdelivr.net/gh/leglibon/libpub-recent-feed@main/recent.json"
