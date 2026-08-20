@@ -3,30 +3,35 @@
     "group_id": 14648,
     "name": "Committee Reports",
     "friendly_url": "https://librarypublications.ola.org/committee-reports",
-    "published": "2026-08-19 14:05:53"
+    "published": "2026-08-19 14:05:53",
+    "thumbnail": null
   },
   {
     "group_id": 14648,
     "name": "Select Committee Guide (1990-2025)",
     "friendly_url": "https://librarypublications.ola.org/select-committee-guide",
-    "published": "2026-08-19 14:05:44"
+    "published": "2026-08-19 14:05:44",
+    "thumbnail": null
   },
   {
     "group_id": 14648,
     "name": "Reports prepared by Standing Committees",
     "friendly_url": "https://librarypublications.ola.org/standing-committee-reports",
-    "published": "2026-08-05 18:41:01"
+    "published": "2026-08-05 18:41:01",
+    "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/Pre-Budget-2026.png"
   },
   {
     "group_id": 9221,
     "name": "Tariffs: A Snapshot",
     "friendly_url": "https://librarypublications.ola.org/pab/tariffs-and-trade",
-    "published": "2026-07-29 17:59:23"
+    "published": "2026-07-29 17:59:23",
+    "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/tariffs.png"
   },
   {
     "group_id": 9221,
     "name": "Public Transit",
     "friendly_url": "https://librarypublications.ola.org/pab/public-transit",
-    "published": "2026-06-09 12:38:56"
+    "published": "2026-06-09 12:38:56",
+    "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/transit.png"
   }
 ]
