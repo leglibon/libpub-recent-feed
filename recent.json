@@ -33,5 +33,12 @@
     "friendly_url": "https://librarypublications.ola.org/pab/public-transit",
     "published": "2026-06-09 12:38:56",
     "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/transit.png"
+  },
+  {
+    "group_id": 13904,
+    "name": "Education: Two-page briefings",
+    "friendly_url": "https://librarypublications.ola.org/research-papers/education",
+    "published": "2026-06-01 14:25:44",
+    "thumbnail": null
   }
 ]
