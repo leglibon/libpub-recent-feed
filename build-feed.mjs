@@ -11,7 +11,7 @@ import { writeFileSync, readFileSync, existsSync } from "node:fs";
 const SITE_ID = "7829";
 const KEY = process.env.LIBGUIDES_KEY; // set as a GitHub Actions secret
 const GROUPS = ["13904", "9221", "15789", "14648"]; // RP, PAB, Visualized Data, Collection Resources
-const MAX = 5;
+const MAX = 6;
 
 if (!KEY) throw new Error("LIBGUIDES_KEY env var is not set");
 
