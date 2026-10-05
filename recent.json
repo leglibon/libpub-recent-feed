@@ -1,5 +1,12 @@
 [
   {
+    "group_id": 9221,
+    "name": "Daylight Saving Time",
+    "friendly_url": "https://librarypublications.ola.org/pab/daylight-saving-time",
+    "published": "2026-10-05 12:27:52",
+    "thumbnail": null
+  },
+  {
     "group_id": 14648,
     "name": "Committee Reports",
     "friendly_url": "https://librarypublications.ola.org/committee-reports",
@@ -33,12 +40,5 @@
     "friendly_url": "https://librarypublications.ola.org/pab/public-transit",
     "published": "2026-06-09 12:38:56",
     "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/transit.png"
-  },
-  {
-    "group_id": 13904,
-    "name": "Education: Two-page briefings",
-    "friendly_url": "https://librarypublications.ola.org/research-papers/education",
-    "published": "2026-06-01 14:25:44",
-    "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/education-2-pager.png"
   }
 ]
