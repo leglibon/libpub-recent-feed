@@ -1,6 +1,13 @@
 [
   {
     "group_id": 9221,
+    "name": "Tariffs: A Snapshot",
+    "friendly_url": "https://librarypublications.ola.org/pab/tariffs-and-trade",
+    "published": "2026-10-19 20:59:55",
+    "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/tariffs.png"
+  },
+  {
+    "group_id": 9221,
     "name": "Daylight Saving Time",
     "friendly_url": "https://librarypublications.ola.org/pab/daylight-saving-time",
     "published": "2026-10-05 12:27:52",
@@ -26,13 +33,6 @@
     "friendly_url": "https://librarypublications.ola.org/standing-committee-reports",
     "published": "2026-08-05 18:41:01",
     "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/Pre-Budget-2026.png"
-  },
-  {
-    "group_id": 9221,
-    "name": "Tariffs: A Snapshot",
-    "friendly_url": "https://librarypublications.ola.org/pab/tariffs-and-trade",
-    "published": "2026-07-29 17:59:23",
-    "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/tariffs.png"
   },
   {
     "group_id": 9221,
