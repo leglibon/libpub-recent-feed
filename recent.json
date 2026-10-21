@@ -1,6 +1,13 @@
 [
   {
     "group_id": 9221,
+    "name": "Public Procurement in Ontario",
+    "friendly_url": "https://librarypublications.ola.org/pab/public-procurement-in-ontario",
+    "published": "2026-10-20 17:03:06",
+    "thumbnail": null
+  },
+  {
+    "group_id": 9221,
     "name": "Tariffs: A Snapshot",
     "friendly_url": "https://librarypublications.ola.org/pab/tariffs-and-trade",
     "published": "2026-10-19 20:59:55",
@@ -33,12 +40,5 @@
     "friendly_url": "https://librarypublications.ola.org/standing-committee-reports",
     "published": "2026-08-05 18:41:01",
     "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/Pre-Budget-2026.png"
-  },
-  {
-    "group_id": 9221,
-    "name": "Public Transit",
-    "friendly_url": "https://librarypublications.ola.org/pab/public-transit",
-    "published": "2026-06-09 12:38:56",
-    "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/transit.png"
   }
 ]
