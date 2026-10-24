@@ -1,5 +1,12 @@
 [
   {
+    "group_id": 13904,
+    "name": "Regulated Health Professions",
+    "friendly_url": "https://librarypublications.ola.org/research-papers/regulated-health-professions",
+    "published": "2026-10-23 18:23:00",
+    "thumbnail": null
+  },
+  {
     "group_id": 9221,
     "name": "Public Procurement in Ontario",
     "friendly_url": "https://librarypublications.ola.org/pab/public-procurement-in-ontario",
@@ -32,13 +39,6 @@
     "name": "Select Committee Guide (1990-2025)",
     "friendly_url": "https://librarypublications.ola.org/select-committee-guide",
     "published": "2026-08-19 14:05:44",
-    "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/Pre-Budget-2026.png"
-  },
-  {
-    "group_id": 14648,
-    "name": "Reports prepared by Standing Committees",
-    "friendly_url": "https://librarypublications.ola.org/standing-committee-reports",
-    "published": "2026-08-05 18:41:01",
     "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/Pre-Budget-2026.png"
   }
 ]
