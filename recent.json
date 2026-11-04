@@ -1,5 +1,19 @@
 [
   {
+    "group_id": 9221,
+    "name": "Remembrance Day",
+    "friendly_url": "https://librarypublications.ola.org/pab/remembrance",
+    "published": "2026-11-04 13:44:59",
+    "thumbnail": null
+  },
+  {
+    "group_id": 9221,
+    "name": "Fall Economic Statement 2026",
+    "friendly_url": "https://librarypublications.ola.org/pab/fes-2026",
+    "published": "2026-11-03 19:45:24",
+    "thumbnail": null
+  },
+  {
     "group_id": 13904,
     "name": "Regulated Health Professions",
     "friendly_url": "https://librarypublications.ola.org/research-papers/regulated-health-professions",
@@ -26,19 +40,5 @@
     "friendly_url": "https://librarypublications.ola.org/pab/daylight-saving-time",
     "published": "2026-10-05 12:27:52",
     "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/dst-fall.png"
-  },
-  {
-    "group_id": 14648,
-    "name": "Committee Reports",
-    "friendly_url": "https://librarypublications.ola.org/committee-reports",
-    "published": "2026-08-19 14:05:53",
-    "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/Pre-Budget-2026.png"
-  },
-  {
-    "group_id": 14648,
-    "name": "Select Committee Guide (1990-2025)",
-    "friendly_url": "https://librarypublications.ola.org/select-committee-guide",
-    "published": "2026-08-19 14:05:44",
-    "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/Pre-Budget-2026.png"
   }
 ]
