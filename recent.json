@@ -1,5 +1,12 @@
 [
   {
+    "group_id": 13904,
+    "name": "Long-Term Care: 2018-2026",
+    "friendly_url": "https://librarypublications.ola.org/research-papers/long-term-care-2026",
+    "published": "2026-11-10 17:03:30",
+    "thumbnail": null
+  },
+  {
     "group_id": 9221,
     "name": "Remembrance Day",
     "friendly_url": "https://librarypublications.ola.org/pab/remembrance",
@@ -33,12 +40,5 @@
     "friendly_url": "https://librarypublications.ola.org/pab/tariffs-and-trade",
     "published": "2026-10-19 20:59:55",
     "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/tariffs.png"
-  },
-  {
-    "group_id": 9221,
-    "name": "Daylight Saving Time",
-    "friendly_url": "https://librarypublications.ola.org/pab/daylight-saving-time",
-    "published": "2026-10-05 12:27:52",
-    "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/dst-fall.png"
   }
 ]
