@@ -1,6 +1,34 @@
 [
   {
     "group_id": 13904,
+    "name": "Deepfakes: Legal and Regulatory Responses",
+    "friendly_url": "https://librarypublications.ola.org/research-papers/deepfakes",
+    "published": "2026-11-25 17:50:11",
+    "thumbnail": null
+  },
+  {
+    "group_id": 13904,
+    "name": "Artificial Intelligence: Two-page briefings",
+    "friendly_url": "https://librarypublications.ola.org/research-papers/artificial-intelligence",
+    "published": "2026-11-25 17:50:01",
+    "thumbnail": null
+  },
+  {
+    "group_id": 13904,
+    "name": "AI, Parliament, and the Public Service",
+    "friendly_url": "https://librarypublications.ola.org/research-papers/ai-parliament-public-service",
+    "published": "2026-11-25 17:49:48",
+    "thumbnail": null
+  },
+  {
+    "group_id": 13904,
+    "name": "Glossary of Key Terms: Artificial Intelligence",
+    "friendly_url": "https://librarypublications.ola.org/research-papers/ai-glossary",
+    "published": "2026-11-25 17:49:40",
+    "thumbnail": null
+  },
+  {
+    "group_id": 13904,
     "name": "Long-Term Care: 2018-2026",
     "friendly_url": "https://librarypublications.ola.org/research-papers/long-term-care-2026",
     "published": "2026-11-10 17:03:30",
@@ -12,33 +40,5 @@
     "friendly_url": "https://librarypublications.ola.org/pab/remembrance",
     "published": "2026-11-04 13:44:59",
     "thumbnail": null
-  },
-  {
-    "group_id": 9221,
-    "name": "Fall Economic Statement 2026",
-    "friendly_url": "https://librarypublications.ola.org/pab/fes-2026",
-    "published": "2026-11-03 19:45:24",
-    "thumbnail": null
-  },
-  {
-    "group_id": 13904,
-    "name": "Regulated Health Professions",
-    "friendly_url": "https://librarypublications.ola.org/research-papers/regulated-health-professions",
-    "published": "2026-10-23 18:23:00",
-    "thumbnail": null
-  },
-  {
-    "group_id": 9221,
-    "name": "Public Procurement in Ontario",
-    "friendly_url": "https://librarypublications.ola.org/pab/public-procurement-in-ontario",
-    "published": "2026-10-20 17:03:06",
-    "thumbnail": null
-  },
-  {
-    "group_id": 9221,
-    "name": "Tariffs: A Snapshot",
-    "friendly_url": "https://librarypublications.ola.org/pab/tariffs-and-trade",
-    "published": "2026-10-19 20:59:55",
-    "thumbnail": "https://d1qywhc7l90rsa.cloudfront.net/customers/4253/images/tariffs.png"
   }
 ]
